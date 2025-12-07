@@ -1,2 +1,78 @@
-# profile-page
-A personal profile page showcasing my skills, learning timeline, and contact links.
+Yasser Diab — Personal Profile Page
+
+A simple and elegant personal profile webpage built using HTML & CSS.
+This project represents my early steps in frontend development, and I aim to improve it as I continue learning.
+
+## Features
+
+- Clean and responsive design
+
+- Profile image and short bio
+
+- Contact buttons with icons
+
+- Skills section with interactive hover effects
+
+- A vertical timeline showing my learning progress
+
+- Smooth scrolling navigation
+
+- Mobile-friendly layout
+
+## Technologies Used
+
+- HTML5
+
+- CSS3
+
+- Flexbox
+
+- Media Queries
+
+- Smooth Scroll
+
+- Custom hover backgrounds for skills section
+
+## Project Structure
+/project-folder
+│
+├── index.html
+├── Profile-Page-Styles.css
+└── /media
+     ├── Profile-img-1.jpg
+     ├── HTML-img.png
+     ├── CSS-img.png
+     ├── Py-img.png
+     ├── JS-img.png
+     └── FE-img.png
+
+## How to Run the Project
+
+Download or clone the repository:
+
+git clone https://github.com/Yasser-Diab/profile-page.git
+Open index.html in your browser.
+
+That's it!
+
+## Future Improvements
+
+- Add a dedicated Projects section
+
+- Add animations using JavaScript
+
+- Add a dark mode
+
+- Improve mobile UI
+
+- Add download CV button
+
+## contact
+
+If you need help with simple coding or want to collaborate, feel free to reach out:
+
+Email: yasserdiabhassan@gmail.com
+
+LinkedIn: https://www.linkedin.com/in/diabhassan1812025
+
+GitHub: https://github.com/Yasser-Diab
