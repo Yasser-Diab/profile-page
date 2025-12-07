@@ -199,61 +199,32 @@ html {
 }
 
 .html:hover,
-.html:focus {
-    background-image: url("media/HTML-img.png");
-    color: white;
-    text-shadow: black 2px 2px 2px;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
+.html:focus,
 .css:hover,
-.css:focus {
-    background-image: url("media/CSS-img.png");
-    color: white;
-    text-shadow: black 2px 2px 2px;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
+.css:focus,
 .py:hover,
 .py:focus {
-    background-image: url("media/Py-img.png");
-    color: white;
-    text-shadow: black 2px 2px 2px;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-color: black;
+    color: goldenrod;
+    text-shadow: white 0.5px 0.5px 2px;
+    box-shadow: goldenrod 0px 0px 7px 3px;
+    transform: translateY(-2px) translateX(-2px);
 }
 
 .js:hover,
-.js:focus {
-    background-image: url("media/JS-img.png");
-    color: white;
-    text-shadow: black 2px 2px 2px;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
+.js:focus,
 .fe:hover,
 .fe:focus {
-    background-image: url("media/FE-img.png");
+    background-color: whitesmoke;
     color: black;
-    text-shadow: white 2px 2px 2px;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    text-shadow: white 0.5px 0.5px 2px;
+    box-shadow: 0px 0px 9px goldenrod;
+    transform: translateY(-2px) translateX(-2px);
 }
-
 
 .projects-timeline {
     margin-top: 30px;
     max-width: 90%;
-    margin-left: auto;
-    margin-right: auto;
     padding: 20px;
     box-shadow: #555 0px 0px 10px 2px;
     border-radius: 15px;
@@ -272,7 +243,7 @@ html {
 .timeline-list {
     list-style-type: none;
     padding: 0;
-    margin: 0;
+    margin: auto 5px 50px 5px;
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -282,31 +253,41 @@ html {
 .timeline-list::before {
     content: "";
     position: absolute;
-    left: 20px;
-    top: 0;
+    left: 25px;
+    top: 1px;
     bottom: 0;
-    width: 3px;
-    background: darkgoldenrod;
+    width: 8px;
+    background: rgba(184, 135, 11, 0.627);
     opacity: 0.7;
 }
 
 .timeline-item {
     position: relative;
-    padding-left: 50px;
+    padding-left: 45px;
 }
 
-.timeline-item::before {
+.timeline-date::before {
     content: "";
     position: absolute;
-    left: 16px;
-    top: 0.65em;
-    bottom: 0;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background: goldenrod;
-    opacity: 0.9;
+    left: -19px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 19px;
+    height: 8px;
+    background: darkgoldenrod;
 }
+
+.timeline-date {
+    position: relative;
+    display: inline-block;
+    background: darkgoldenrod;
+    color: white;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
 
 footer {
     text-align: center;
@@ -349,22 +330,38 @@ footer a {
         margin: 15px 15px 15px 15px;
     }
 
-    .skill-item {
-        min-width: 40px;
-        padding: 8px 10px;
+    .projects-timeline {
+        margin-top: 30px;
+        max-width: 100%;
+        margin-left: 0px;
+        padding: 10px;
         font-size: 1em;
     }
 
-    .timeline-item {
-        padding-left: 50px;
+    .projects-timeline>h2 {
+        font-size: 1.5em;
+        margin: 20px 0 12px 0;
+    }
+
+    .timeline-list {
+        gap: 15px;
+        margin: 10px;
+    }
+
+    .skill-item {
+        min-width: 40px;
+        padding: 5px 8px;
+        font-size: 1em;
+        margin: 10px;
     }
 
     .timeline-list::before {
-        left: 16px;
+        left: 10px;
     }
 
-    .timeline-item::before {
-        left: 10px;
+    .timeline-date {
+        font-size: 0.9em;
+        margin-left: -15px;
     }
 
 }
