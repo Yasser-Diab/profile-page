@@ -40,12 +40,6 @@ This project represents my early steps in frontend development, and I aim to imp
 ├── Profile-Page-Styles.css
 └── /media
      ├── Profile-img-1.jpg
-     ├── HTML-img.png
-     ├── CSS-img.png
-     ├── Py-img.png
-     ├── JS-img.png
-     └── FE-img.png
-
 ## How to Run the Project
 
 Download or clone the repository:
@@ -74,5 +68,6 @@ If you need help with simple coding or want to collaborate, feel free to reach o
 Email: yasserdiabhassan@gmail.com
 
 LinkedIn: https://www.linkedin.com/in/diabhassan1812025
+
 
 GitHub: https://github.com/Yasser-Diab
