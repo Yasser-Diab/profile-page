@@ -87,7 +87,7 @@ html {
 
 .contact-btn {
     display: inline-block;
-    margin: 10px 25px 10px 10px;
+    margin: 10px 15px 10px 10px;
     font-size: 1em;
     text-decoration: none;
     border-radius: 25px;
@@ -365,3 +365,4 @@ footer a {
     }
 
 }
+
