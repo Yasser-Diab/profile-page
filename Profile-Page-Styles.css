@@ -143,13 +143,15 @@ html {
     box-shadow: 0 6px 14px rgba(132, 18, 18, 0.475);
 }
 
-.contact-btn:focus {
+.contact-btn:focus,
+.project-anchor:focus {
     transform: translateX(-2px) translateY(-3px);
     box-shadow: 0 6px 14px goldenrod;
     border: 3px solid goldenrod;
 }
 
-.contact-btn:active {
+.contact-btn:active,
+.project-anchor:active {
     transform: translateX(-2px) translateY(-3px);
     box-shadow: 0 6px 14px goldenrod;
     border: 3px solid goldenrod;
@@ -231,7 +233,7 @@ html {
     background-color: azure;
     font-size: 1.08em;
     line-height: 1.8;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
 }
 
 .projects-timeline>h2 {
@@ -288,6 +290,47 @@ html {
     margin-bottom: 5px;
 }
 
+.new-project {
+    background-color: #f3e1a0;
+    background-color: color-mix(in srgb, gray 5%, gold 20%);
+    margin-left: 1.6em;
+    padding: 0.5em;
+    border-radius: 0 10px 10px 0;
+    box-shadow: 5px 5px 25px goldenrod;
+    color: #4b2e00;
+    ;
+
+}
+
+.new-project .timeline-date {
+    margin-left: 0.5em;
+}
+
+.project-anchor {
+    color: rgb(163, 124, 15);
+    text-decoration: none;
+}
+
+.project-view {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: fit-content;
+    padding: 0.3em 1.5em;
+    border-radius: 15px;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.3);
+    background-color: darkgoldenrod;
+    color: whitesmoke;
+
+}
+
+.project-view a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
 
 footer {
     text-align: center;
@@ -303,8 +346,13 @@ footer a {
     margin: 15px;
 }
 
+footer a:hover,
+.project-anchor:hover,
+.project-view-a:hover {
+    text-decoration: underline;
+}
 
-@media (max-width: 600px) {
+@media (max-width: 400px) {
 
     .profile-container {
         padding: 20px;
@@ -364,5 +412,8 @@ footer a {
         margin-left: -15px;
     }
 
-}
+    .new-project .timeline-date {
+        margin-left: -0.18em;
+    }
 
+}
