@@ -331,6 +331,27 @@ html {
     font-size: 1.1em;
 }
 
+.project-view:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+}
+
+.project-view:hover::after {
+    content: "";
+    position: relative;
+    left: 2px;
+    top: 0px;
+    width: 10px;
+    bottom: 0px;
+    height: 10px;
+    border: whitesmoke;
+    border-width: 0 5px 5px 0;
+    border-style: solid;
+    transform: rotate(315deg);
+    margin-left: 0.25em;
+}
+
 
 footer {
     text-align: center;
@@ -414,6 +435,25 @@ footer a:hover,
 
     .new-project .timeline-date {
         margin-left: -0.18em;
+    }
+
+    .project-view {
+        padding: 0.5em 0.5em;
+    }
+
+    .project-view:hover::after {
+        content: "";
+        position: relative;
+        left: 1px;
+        top: 0px;
+        width: 8px;
+        bottom: 0px;
+        height: 8px;
+        border: whitesmoke;
+        border-width: 0 3px 3px 0;
+        border-style: solid;
+        transform: rotate(315deg);
+        margin-left: 0.1em;
     }
 
 }
