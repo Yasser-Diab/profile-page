@@ -328,7 +328,9 @@ html {
     transition: 0.3s ease-in-out;
 }
 
-.project-view:hover {
+.project-view:hover,
+.project-view:focus,
+.project-view:active {
     font-weight: bold;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
     background-color: goldenrod;
@@ -353,8 +355,7 @@ footer a {
 }
 
 footer a:hover,
-.project-anchor:hover,
-.project-view-a:hover {
+.project-anchor:hover {
     text-decoration: underline;
 }
 
