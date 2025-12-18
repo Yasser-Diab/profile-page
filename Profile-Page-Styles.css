@@ -322,34 +322,19 @@ html {
     box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.3);
     background-color: darkgoldenrod;
     color: whitesmoke;
-
-}
-
-.project-view a {
-    color: whitesmoke;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.2em;
     text-decoration: none;
-    font-size: 1.1em;
+    transition: 0.3s ease-in-out;
 }
 
 .project-view:hover {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
-    text-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     font-weight: bold;
-}
-
-.project-view:hover::after {
-    content: "";
-    position: relative;
-    left: 2px;
-    top: 0px;
-    width: 10px;
-    bottom: 0px;
-    height: 10px;
-    border: whitesmoke;
-    border-width: 0 5px 5px 0;
-    border-style: solid;
-    transform: rotate(315deg);
-    margin-left: 0.25em;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+    background-color: goldenrod;
+    transform: scale(1.025);
+    transition: 0.2s ease-in-out;
+    text-decoration: underline;
 }
 
 
