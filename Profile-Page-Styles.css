@@ -17,7 +17,7 @@ html {
     padding: 50px;
     box-shadow: #555 0px 0px 10px 2px;
     border-radius: 22.5px;
-
+    transition: all 0.3s ease-in-out;
 }
 
 .profile-header {
@@ -66,6 +66,7 @@ html {
 .contact-info {
     margin-top: 30px;
     font-size: 1.2em;
+    transition: all 0.3s ease-in-out;
 }
 
 .contact-note {
@@ -77,6 +78,10 @@ html {
 }
 
 .contact-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -86,17 +91,15 @@ html {
 }
 
 .contact-btn {
-    display: inline-block;
-    margin: 10px 15px 10px 10px;
+    display: block;
     font-size: 1em;
     text-decoration: none;
-    border-radius: 25px;
+    border-radius: 32px;
     text-align: center;
-    padding: 12px 22px 12px 58px;
+    padding: 12px 15px 10px 50px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
-    transition: box-shadow 0.3s ease-out;
+    transition: all 0.2s ease-out;
     background-size: 32px;
-    box-sizing: border-box;
     font-family: 'Times New Roman', Times, serif;
 }
 
@@ -105,7 +108,7 @@ html {
     background-color: #700000;
     background-image: url('https://cdn-icons-png.flaticon.com/512/732/732200.png');
     background-repeat: no-repeat;
-    background-position: 20px center;
+    background-position: 10px center;
     width: auto;
 
 }
@@ -114,7 +117,7 @@ html {
     background-color: #700000;
     background-image: url('https://img.icons8.com/?size=100&id=ufkkYBXJSuPy&format=png&color=FFFFFF');
     background-repeat: no-repeat;
-    background-position: 20px center;
+    background-position: 10px center;
     color: whitesmoke;
     width: auto;
 }
@@ -123,7 +126,7 @@ html {
     background-color: rgba(26, 26, 117, 0.705);
     background-image: url('https://img.icons8.com/?size=100&id=kBCrQMzpQDLQ&format=png&color=FFFFFF');
     background-repeat: no-repeat;
-    background-position: 20px center;
+    background-position: 10px center;
     color: whitesmoke;
     width: auto;
 }
@@ -133,28 +136,28 @@ html {
     background-image: url('https://img.icons8.com/?size=100&id=LoL4bFzqmAa0&format=png&color=FFFFFF');
 
     background-repeat: no-repeat;
-    background-position: 20px center;
+    background-position: 10px center;
     color: white;
     width: auto;
 }
 
 .contact-btn:hover {
-    transform: translateX(-1px) translateY(-2px);
+    transform: scale(1.1);
     box-shadow: 0 6px 14px rgba(132, 18, 18, 0.475);
 }
 
 .contact-btn:focus,
 .project-anchor:focus {
-    transform: translateX(-2px) translateY(-3px);
+    transform: scale(1.1);
     box-shadow: 0 6px 14px goldenrod;
-    border: 3px solid goldenrod;
+    border: 1px solid goldenrod;
 }
 
 .contact-btn:active,
 .project-anchor:active {
     transform: translateX(-2px) translateY(-3px);
     box-shadow: 0 6px 14px goldenrod;
-    border: 3px solid goldenrod;
+    border: 1px solid goldenrod;
 }
 
 .skills-section {
@@ -192,6 +195,7 @@ html {
     position: relative;
     overflow: hidden;
     background-position: center;
+    transition: all 0.3s ease-in-out;
 }
 
 .learning {
@@ -200,35 +204,29 @@ html {
     box-shadow: goldenrod 0 3px 7px;
 }
 
-.html:hover,
-.html:focus,
-.css:hover,
-.css:focus,
-.py:hover,
-.py:focus {
-    background-color: black;
+.current:hover,
+.current:focus {
+    background-color: azure;
     color: goldenrod;
     text-shadow: white 0.5px 0.5px 2px;
     box-shadow: goldenrod 0px 0px 7px 3px;
     transform: translateY(-2px) translateX(-2px);
 }
 
-.js:hover,
-.js:focus,
-.fe:hover,
-.fe:focus {
-    background-color: whitesmoke;
+.learning:hover,
+.learning:focus {
+    background-color: azure;
     color: black;
     text-shadow: white 0.5px 0.5px 2px;
     box-shadow: 0px 0px 9px goldenrod;
-    transform: translateY(-2px) translateX(-2px);
+    transform: translateX(-2px);
 }
 
 .projects-timeline {
     margin: 30px auto 0 auto;
     max-width: 90%;
     padding: 20px;
-    box-shadow: #555 0px 0px 10px 2px;
+    box-shadow: -3px 3px 20px 5px #555;
     border-radius: 15px;
     background-color: azure;
     font-size: 1.08em;
@@ -294,16 +292,14 @@ html {
     background-color: #f3e1a0;
     background-color: color-mix(in srgb, gray 5%, gold 20%);
     margin-left: 1.6em;
-    padding: 0.5em;
+    padding: 1em;
     border-radius: 0 10px 10px 0;
     box-shadow: 5px 5px 25px goldenrod;
     color: #4b2e00;
-    ;
-
 }
 
 .new-project .timeline-date {
-    margin-left: 0.5em;
+    box-shadow: -3px 5px 5px azure;
 }
 
 .project-anchor {
@@ -315,28 +311,25 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
+    margin: 8px auto 8px auto;
     width: fit-content;
     padding: 0.3em 1.5em;
     border-radius: 15px;
-    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: -4px 4px 7px rgba(0, 0, 0, 0.3);
     background-color: darkgoldenrod;
     color: whitesmoke;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 1.2em;
     text-decoration: none;
-    transition: 0.3s ease-in-out;
+    transition: all 0.4s ease-in-out;
 }
 
 .project-view:hover,
 .project-view:focus,
 .project-view:active {
-    font-weight: bold;
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+    box-shadow: -2px 2px 20px goldenrod;
     background-color: goldenrod;
-    transform: scale(1.025);
-    transition: 0.2s ease-in-out;
-    text-decoration: underline;
+    transform: scale(1.1);
 }
 
 
@@ -359,10 +352,16 @@ footer a:hover,
     text-decoration: underline;
 }
 
-@media (max-width: 400px) {
+footer a:focus {
+    text-shadow: -2px 3px 10px goldenrod;
+}
+
+
+@media (max-width: 650px) {
 
     .profile-container {
         padding: 20px;
+        max-width: 300px;
     }
 
     .profile-image {
@@ -379,10 +378,11 @@ footer a:hover,
     }
 
     .contact-btn {
-        padding: 12px 20px 12px 50px;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px auto;
         font-size: 0.9em;
-        width: 90%;
-        margin: 15px 15px 15px 15px;
+        gap: 20px;
     }
 
     .projects-timeline {
@@ -419,27 +419,23 @@ footer a:hover,
         margin-left: -15px;
     }
 
+    .new-project {
+        background-color: #f3e1a0;
+        background-color: color-mix(in srgb, gray 5%, gold 20%);
+        margin-left: 1em;
+        padding: 0.6em;
+        border-radius: 0 10px 10px 0;
+        box-shadow: 3px 3px 10px goldenrod;
+        color: #4b2e00;
+    }
+
     .new-project .timeline-date {
-        margin-left: -0.18em;
+        margin-left: 5px;
     }
 
     .project-view {
-        padding: 0.5em 0.5em;
-    }
-
-    .project-view:hover::after {
-        content: "";
-        position: relative;
-        left: 1px;
-        top: 0px;
-        width: 8px;
-        bottom: 0px;
-        height: 8px;
-        border: whitesmoke;
-        border-width: 0 3px 3px 0;
-        border-style: solid;
-        transform: rotate(315deg);
-        margin-left: 0.1em;
+        padding: 0.15em 0.6em;
+        border-radius: 8px;
     }
 
 }
