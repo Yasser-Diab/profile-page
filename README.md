@@ -42,12 +42,8 @@ This project represents my early steps in frontend development, and I aim to imp
      ├── Profile-img-1.jpg
 ## How to Run the Project
 
-Download or clone the repository:
-
-git clone https://github.com/Yasser-Diab/profile-page.git
-Open index.html in your browser.
-
-That's it!
+Visit:
+https://yasser-diab.github.io/profile-page/
 
 ## Future Improvements
 
