@@ -40,10 +40,12 @@ This project represents my early steps in frontend development, and I aim to imp
 ├── Profile-Page-Styles.css
 └── /media
      ├── Profile-img-1.jpg
+     ├── DP.jpg
 ## How to Run the Project
 
 Visit:
-https://yasser-diab.github.io/profile-page/
+
+https://yasser-diab.github.io/profile-page/
 
 ## Future Improvements
 
@@ -67,3 +69,4 @@ LinkedIn: https://www.linkedin.com/in/diabhassan1812025
 
 
 GitHub: https://github.com/Yasser-Diab
+
