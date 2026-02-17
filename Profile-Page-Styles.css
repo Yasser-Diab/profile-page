@@ -293,11 +293,6 @@ body.is-scrolled-contact .contacts-icons {
     margin: 0 auto;
 }
 
-.skill-card:hover {
-    transform: translateY(-8px);
-    border-color: gold;
-}
-
 .skill-header {
     display: flex;
     flex-wrap: wrap;
@@ -649,3 +644,4 @@ footer a:focus {
     }
 
 }
+
