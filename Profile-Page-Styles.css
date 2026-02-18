@@ -424,29 +424,13 @@ body.is-scrolled-skills-fd .frontend {
     padding: 2em;
     border-radius: 1em;
     border: 1px solid rgba(255, 255, 255, 0.1);
-    transition: 0.3s ease;
+    transition: all 0.45s ease-in-out;
 }
 
 .certificate-card:hover {
-    transform: translateY(-6px);
     border-color: gold;
 }
 
-.certificate {
-    display: inline-block;
-    margin-top: 1em;
-    padding: 0.4em 1.2em;
-    border-radius: 1em;
-    background: darkgoldenrod;
-    color: white;
-    font-weight: bold;
-    transition: 0.3s ease;
-}
-
-.certificate:hover {
-    background: goldenrod;
-    transform: scale(1.05);
-}
 
 .certificate-img {
     width: 100%;
@@ -456,7 +440,8 @@ body.is-scrolled-skills-fd .frontend {
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
 }
 
-.certificate {
+.certificate,
+.project-view {
     text-decoration: none;
     display: block;
     width: fit-content;
@@ -473,7 +458,9 @@ body.is-scrolled-skills-fd .frontend {
 }
 
 .certificate:hover,
-.certificate:focus {
+.certificate:focus,
+.project-view:hover,
+.project-view:focus {
     background: goldenrod;
     box-shadow: 0 0 20px goldenrod;
     transform: scale(1.05);
@@ -514,7 +501,8 @@ body.is-scrolled-skills-fd .frontend {
 
 .learning-item.highlight {
     border-left: 4px solid orange;
-    background: #332500;
+    background: #1e1e1c;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
 }
 
 .learning-date {
@@ -540,8 +528,8 @@ body.is-scrolled-skills-fd .frontend {
 }
 
 .project-card:hover {
-    transform: translateY(-5px);
     border-color: gold;
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
 }
 
 .project-card h3 {
@@ -554,6 +542,26 @@ body.is-scrolled-skills-fd .frontend {
     margin-bottom: 1em;
 }
 
+.featured-project {
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+}
+
+.featured-project::before {
+    content: "CLIENT PROJECT";
+    display: inline-block;
+    background: darkgoldenrod;
+    color: black;
+    padding: 0.3em 0.8em;
+    border-radius: 1em;
+    font-size: 0.75em;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+.project-links {
+    display: flex;
+    justify-content: space-around;
+}
 
 
 /* ----------- Footer ------------*/
