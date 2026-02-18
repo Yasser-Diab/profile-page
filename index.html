@@ -27,10 +27,10 @@
                         const scrollPos = window.scrollY;
                         body.classList.toggle('is-scrolled', scrollPos > 20);
                         body.classList.toggle('is-scrolled-contact', scrollPos > 730);
-                        body.classList.toggle('is-scrolled-skills-html', scrollPos > 1030);
-                        body.classList.toggle('is-scrolled-skills-css', scrollPos > 1380);
-                        body.classList.toggle('is-scrolled-skills-js', scrollPos > 1720);
-                        body.classList.toggle('is-scrolled-skills-fd', scrollPos > 2040);
+                        body.classList.toggle('is-scrolled-skills-html', scrollPos > 1150);
+                        body.classList.toggle('is-scrolled-skills-css', scrollPos > 1410);
+                        body.classList.toggle('is-scrolled-skills-js', scrollPos > 1730);
+                        body.classList.toggle('is-scrolled-skills-fd', scrollPos > 2050);
 
 
                         ticking = false;
@@ -51,15 +51,8 @@
             <div class="nav-title">Yasser Diab</div>
             <a class="nav-hidden-cont" href="#contact-heading">Contact</a>
             <a class="nav-skills" href="#skills-title">Skills</a>
-            <a class="nav-timeline" href="#timeline-title">Timeline</a>
-            <a class="nav-projects" href="#projects">Projects</a>
-        </nav>
-        <nav id="sub-navbar">
-            <div class="nav-title">Yasser Diab</div>
-            <a class="nav-hidden-cont" href="#contact-heading">Contact</a>
-            <a class="nav-skills" href="#skills-title">Skills</a>
-            <a class="nav-timeline" href="#timeline-title">Timeline</a>
-            <a class="nav-projects" href="#projects">Projects</a>
+            <a class="nav-timeline" href="#learning-title">Journey</a>
+            <a class="nav-projects" href="#projects-title">Projects</a>
         </nav>
 
         <h1 class="profile-name">Hi, I'm Yasser</h1>
@@ -113,7 +106,10 @@
                 <!-- ================= HTML ================= -->
                 <article id="skill-html" class="skill-card current">
                     <header class="skill-header">
-                        <i class="html icon fa-brands fa-html5"></i>
+                        <a href="#skill-html" aria-label="View HTML skills">
+                            <i class="html icon fa-brands fa-html5"></i>
+                        </a>
+                        <i class="fa-brands fa-html5"></i>
                         <h3>Semantic HTML5</h3>
                         <span class="skill-badge">Advanced</span>
                     </header>
@@ -129,7 +125,10 @@
                 <!-- ================= CSS ================= -->
                 <article id="skill-css" class="skill-card current">
                     <header class="skill-header">
-                        <i class="css icon fa-brands fa-css3"></i>
+                        <a href="#skill-css" aria-label="View CSS skills">
+                            <i class="css icon fa-brands fa-css3"></i>
+                        </a>
+                        <i class="fa-brands fa-css3"></i>
                         <h3>CSS3 & Layout Systems</h3>
                         <span class="skill-badge">Advanced</span>
                     </header>
@@ -145,7 +144,10 @@
                 <!-- ================= JS ================= -->
                 <article id="skill-js" class="skill-card learning">
                     <header class="skill-header">
-                        <i class="js icon fa-brands fa-square-js"></i>
+                        <a href="#skill-js" aria-label="View JavaScript skills">
+                            <i class="js icon fa-brands fa-square-js"></i>
+                        </a>
+                        <i class="fa-brands fa-square-js"></i>
                         <h3>JavaScript</h3>
                         <span class="skill-badge learning-badge">Actively Improving</span>
                     </header>
@@ -161,7 +163,10 @@
                 <!-- ================= Frontend Dev ================= -->
                 <article id="skill-frontend" class="skill-card current">
                     <header class="skill-header">
-                        <i class="frontend icon fa-solid fa-laptop-code"></i>
+                        <a href="#skill-frontend" aria-label="View Frontend Development skills">
+                            <i class="frontend icon fa-solid fa-laptop-code"></i>
+                        </a>
+                        <i class="fa-solid fa-laptop-code"></i>
                         <h3>Frontend Web Development</h3>
                         <span class="skill-badge">Certified (freeCodeCamp)</span>
                     </header>
@@ -175,95 +180,163 @@
 
             </div>
         </section>
+        <section class="certifications-section" aria-labelledby="certifications-title">
 
-        <section class="projects-timeline" aria-labelledby="timeline-title">
-            <h2 id="timeline-title">Projects & Timeline</h2>
-            <ul class="timeline-list">
-                <li class="timeline-item">
-                    <strong class="timeline-date"><time datetime="2025-06">June 2025</time></strong>
-                    Started learning Python and exploring the basics of programming.
-                </li>
-                <li class="timeline-item">
-                    <strong class="timeline-date"><time datetime="2025-07">July 2025</time></strong>
-                    Completed Python fundamentals and earned certifications from the University of Michigan on Coursera.
-                </li>
-                <li class="timeline-item">
-                    <strong class="timeline-date"><time datetime="2025-11">November 2025</time></strong>
-                    Began learning web development, starting with HTML, and finished the core basics in the same month.
-                </li>
-                <li class="timeline-item">
-                    <strong class="timeline-date"><time datetime="2025-12">December 2025</time></strong>
-                    Advanced my skills by learning more CSS and started building small projects to practice what I’ve
-                    learned.
-                </li>
-                <li class="timeline-item new-project">
-                    <strong class="timeline-date">
-                        <time datetime="2025-12-09">9 December 2025</time>
-                    </strong>
-                    I built a
-                    <a href="https://yasser-diab.github.io/flyer-page-1" class="project-anchor" target="_blank"
-                        rel="noopener noreferrer">
-                        responsive event flyer webpage
+            <h2 id="certifications-title" class="section-title">Certifications</h2>
+
+            <div class="certifications-grid">
+
+                <!-- freeCodeCamp Responsive Web Design -->
+                <article class="certificate-card">
+                    <h3>Responsive Web Design – freeCodeCamp</h3>
+                    <img src="media/fcc-responsive-v9.png" alt="Responsive Web Design – freeCodeCamp certificate image"
+                        class="certificate-img">
+                    <a href="https://freecodecamp.org/certification/yasser-diab/responsive-web-design-v9"
+                        class="certificate" target="_blank" rel="noopener noreferrer">
+                        View Certificate (V9)
+                    </a><a href="https://freecodecamp.org/certification/yasser-diab/responsive-web-design"
+                        class="certificate" target="_blank" rel="noopener noreferrer">
+                        View Certificate (V8)
                     </a>
-                    using HTML and CSS, applying flexbox, custom styling,
-                    and semantic structure to practice real-world frontend skills.
-                    <a class="project-view" href="https://yasser-diab.github.io/flyer-page-1" target="_blank"
-                        rel="noopener noreferrer">
-                        <span>
-                            View project
-                        </span>
-                    </a>
-                </li>
-                <li class="timeline-item new-project">
-                    <strong class="timeline-date">
-                        <time datetime="2025-12-18">18 December 2025</time>
-                    </strong>
-                    I built a
-                    <a href="https://yasser-diab.github.io/first-greeting-card" class="project-anchor" target="_blank"
-                        rel="noopener noreferrer">
-                        Greeting Card Webpage
-                    </a>
-                    using HTML,CSS and a bit of JavaScript to enhance my frontend development skills with responsive
-                    design
-                    and styling.
-                    <a class="project-view" href="https://yasser-diab.github.io/first-greeting-card" target="_blank"
-                        rel="noopener noreferrer">
-                        <span>
-                            View project
-                        </span>
-                    </a>
-                </li>
-                <li class="timeline-item new-project">
-                    <strong class="timeline-date">
-                        <time datetime="2025-12-23">23 December 2025</time>
-                    </strong>
-                    I built a
-                    <a href="https://yasser-diab.github.io/FCC-Job-Application-Form" class="project-anchor"
+                </article>
+
+                <!-- Python Course 1 -->
+                <article class="certificate-card">
+                    <h3>Programming for Everybody (Getting Started with Python) – University of Michigan</h3>
+                    <img src="media/programming-for-everybody.png"
+                        alt="Programming for Everybody (Getting Started with Python) – University of Michigan certificate image"
+                        class="certificate-img">
+                    <a href="https://coursera.org/share/71bbee9b32d68c3d6f91f3601bdfe0e2" class="certificate"
                         target="_blank" rel="noopener noreferrer">
-                        Job Application Form
+                        View Certificate
                     </a>
-                    as part of my <strong>freeCodeCamp curriculum</strong>, this project focuses on semantic HTML,
-                    form validation, and CSS pseudo-classes.
-                    <a class="project-view" href="https://yasser-diab.github.io/FCC-Job-Application-Form
-                    " target="_blank" rel="noopener noreferrer">
-                        <span>
-                            View project
-                        </span>
+                </article>
+
+                <!-- Python Course 2 -->
+                <article class="certificate-card">
+                    <h3>Python Data Structures – University of Michigan</h3>
+                    <img src="media/python-data-structures.png"
+                        alt="Python Data Structures – University of Michigan certificate image" class="certificate-img">
+                    <a href="https://coursera.org/share/74a90903142fdcca2507e7501730c87f" class="certificate"
+                        target="_blank" rel="noopener noreferrer">
+                        View Certificate
                     </a>
+                </article>
+
+                <!-- Python Course 3 -->
+                <article class="certificate-card">
+                    <h3>Using Python to Access Web Data – University of Michigan</h3>
+                    <img src="media/python-access-web.png"
+                        alt="Using Python to Access Web Data – University of Michigan certificate image"
+                        class="certificate-img">
+                    <a href="https://coursera.org/share/3c37aa884c513de363c7f3e607d98ee8" class="certificate"
+                        target="_blank" rel="noopener noreferrer">
+                        View Certificate
+                    </a>
+                </article>
+
+            </div>
+
+        </section>
+
+        <section class="learning-journey" aria-labelledby="learning-title">
+            <h2 id="learning-title">Learning Journey</h2>
+
+            <ul class="learning-list">
+
+                <li class="learning-item">
+                    <strong class="learning-date">
+                        <time datetime="2025-06">June 2025</time>
+                    </strong>
+                    Started learning Python and explored core programming fundamentals.
+                </li>
+
+                <li class="learning-item">
+                    <strong class="learning-date">
+                        <time datetime="2025-07">July 2025</time>
+                    </strong>
+                    Completed Python courses from the University of Michigan (Coursera),
+                    strengthening problem-solving and programming foundations.
+                </li>
+
+                <li class="learning-item">
+                    <strong class="learning-date">
+                        <time datetime="2025-11">November 2025</time>
+                    </strong>
+                    Began Web Development journey — mastered semantic HTML structure
+                    and document architecture.
+                </li>
+
+                <li class="learning-item">
+                    <strong class="learning-date">
+                        <time datetime="2025-12">December 2025</time>
+                    </strong>
+                    Advanced into CSS3 — responsive layouts, Flexbox, Grid,
+                    animations, and modern UI techniques.
+                </li>
+
+                <li class="learning-item highlight">
+                    <strong class="learning-date">
+                        <time datetime="2026-02-15">15 February 2026</time>
+                    </strong>
+                    Started advanced Web Development courses on Udemy to deepen
+                    JavaScript knowledge and expand into professional-level frontend development.
                 </li>
 
             </ul>
         </section>
+        <section class="projects-section" aria-labelledby="projects-title">
+            <h2 id="projects-title">Featured Projects</h2>
+
+            <div class="projects-grid">
+
+                <article class="project-card">
+                    <h3>Responsive Event Flyer</h3>
+                    <p>
+                        Built using HTML and CSS with Flexbox layout and semantic structure.
+                        Focused on responsive behavior and clean visual hierarchy.
+                    </p>
+                    <a href="https://yasser-diab.github.io/flyer-page-1" target="_blank" class="project-view">
+                        View Project
+                    </a>
+                </article>
+
+                <article class="project-card">
+                    <h3>Greeting Card Webpage</h3>
+                    <p>
+                        Combined HTML, CSS, and introductory JavaScript
+                        to practice interactivity and responsive design.
+                    </p>
+                    <a href="https://yasser-diab.github.io/first-greeting-card" target="_blank" class="project-view">
+                        View Project
+                    </a>
+                </article>
+
+                <article class="project-card">
+                    <h3>Job Application Form (FCC)</h3>
+                    <p>
+                        Developed as part of freeCodeCamp curriculum.
+                        Focused on semantic forms, validation,
+                        accessibility, and CSS pseudo-classes.
+                    </p>
+                    <a href="https://yasser-diab.github.io/FCC-Job-Application-Form" target="_blank"
+                        class="project-view">
+                        View Project
+                    </a>
+                </article>
+
+            </div>
+        </section>
+
     </main>
     <footer class="profile-footer">
-        <p>&copy; 2026 Yasser Diab <a href="https://github.com/Yasser-Diab" aria-label="Visit my GitHub profile"
-                target="_blank">GitHub</a></p>
-        <p><a href="#contact-heading">Contact</a>
-            <a href="#skills-title">Skills</a>
-            <a href="#timeline-title">Timeline</a>
-        </p>
+        <p>&copy; 2026 Yasser Diab</p>
+        <a href="https://github.com/Yasser-Diab" aria-label="Visit my GitHub profile" target="_blank">GitHub</a>
+        <a href="#contact-heading">Contact</a>
+        <a href="#skills-title">Skills</a>
+        <a href="#learning-title">Journey</a>
+        <a href="#projects-title">Projects</a>
     </footer>
 </body>
 
 </html>
-
