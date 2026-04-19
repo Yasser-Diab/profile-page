@@ -4,365 +4,526 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Yasser Diab Profile Page</title>
+  <meta name="description"
+    content="Yasser Diab is a frontend developer growing from strong HTML and CSS foundations into polished, production-ready web interfaces.">
+  <title>Yasser Diab | Frontend Developer Profile</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Space+Grotesk:wght@400;500;700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="Profile-Page-Styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
     crossorigin="anonymous" referrerpolicy="no-referrer">
   <script src="script.js" defer></script>
-
 </head>
 
 <body>
+  <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch color theme">
+    <span class="theme-toggle__icon" aria-hidden="true">
+      <i class="fa-solid fa-moon"></i>
+    </span>
+    <span class="theme-toggle__text">Dark mode</span>
+  </button>
 
-  <!-- =================== PCursor Shadow =================== -->
+  <main class="page-shell">
+    <aside class="hero-panel" id="top">
+      <a class="profile-mark" href="#top" aria-label="Back to the top">
+        <img src="media/DP.png" alt="Portrait of Yasser Diab" class="profile-image">
+      </a>
 
-  <div class="custom-cursor"></div>
+      <p class="hero-kicker">Frontend Developer in Progress</p>
+      <h1 class="profile-name">Yasser Diab</h1>
+      <p class="hero-lead">
+        I build responsive websites with strong HTML and CSS foundations, practical JavaScript,
+        and a growing focus on cleaner, more production-ready frontend work.
+      </p>
 
-  <!-- =================== Profile Container =================== -->
-  <main class="profile-container">
+      <div class="hero-pills" aria-label="Current highlights">
+        <span class="hero-pill">Responsive Web Design Certified</span>
+        <span class="hero-pill">1 Client Website Shipped</span>
+        <span class="hero-pill">JavaScript in Active Focus</span>
+      </div>
 
-    <!-- =================== Header =================== -->
+      <div class="hero-actions">
+        <a href="#projects" class="button button-primary">View Projects</a>
+        <a href="#contact" class="button button-secondary">Contact Me</a>
+      </div>
 
-    <header id="header" class="profile-header"><a href="#header" aria-label="Go to top of the page">
-        <img src="media/DP.png" alt="Yasser Diab Photo" class="profile-image"></a>
-      <nav id="navbar">
-        <div class="nav-title">Yasser Diab</div>
-        <a class="nav-hidden-cont" href="#contact-heading">Contact</a>
-        <a class="nav-skills" href="#skills-title">Skills</a>
-        <a class="nav-certifi" href="#certifications-title">Certifications</a>
-        <a class="nav-timeline" href="#learning-title">Journey</a>
-        <a class="nav-projects" href="#projects-title">Projects</a>
+      <nav class="section-nav" aria-label="Primary navigation">
+        <a class="nav-link" href="#overview">Overview</a>
+        <a class="nav-link" href="#now">Now</a>
+        <a class="nav-link" href="#skills">Skills</a>
+        <a class="nav-link" href="#certifications">Certifications</a>
+        <a class="nav-link" href="#journey">Journey</a>
+        <a class="nav-link" href="#projects">Projects</a>
+        <a class="nav-link" href="#contact">Contact</a>
       </nav>
 
-      <h1 class="profile-name">Hi, I'm Yasser</h1>
-      <h2 class="profission">a web developer</h2>
-      <h3 class="bio">I’m currently learning frontend development and
-        practicing every day to improve my skills.
-        This page represents my early progress,
-        and I’m excited to look back at it one day and see how far I’ve come.
-      </h3>
-    </header>
-    <!-- =================== Contact Section =================== -->
+      <div class="social-links" aria-label="Social links">
+        <a class="social-link" href="https://github.com/Yasser-Diab" target="_blank" rel="noopener noreferrer"
+          aria-label="Visit my GitHub profile">
+          <i class="fa-brands fa-github" aria-hidden="true"></i>
+        </a>
+        <a class="social-link" href="https://www.linkedin.com/in/diabhassan1812025" target="_blank"
+          rel="noopener noreferrer" aria-label="Visit my LinkedIn profile">
+          <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+        </a>
+        <a class="social-link" href="mailto:yasserdiabhassan@gmail.com" aria-label="Send me an email">
+          <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+        </a>
+        <a class="social-link" href="tel:+201000052085" aria-label="Call me">
+          <i class="fa-solid fa-phone" aria-hidden="true"></i>
+        </a>
+      </div>
+    </aside>
 
-    <div class="main-content">
-      <button type="button" class="theme-toggle"></button>
-      <section class="contact-info" aria-labelledby="contact-heading">
-        <h2 id="contact-heading">Contact Me</h2>
-        <p class="contact-note">
-          If you need a hand with simple coding work, I'd be happy to help. I see every request as an opportunity
-          to learn and improve.
-        </p>
-        <div class="contact-container">
-          <div class="icons">
+    <div class="content-panel">
+      <section class="panel overview-panel" id="overview" data-section>
+        <div class="panel-header">
+          <p class="section-kicker">2026 Snapshot</p>
+          <h2>From structured practice to real frontend delivery</h2>
+        </div>
 
-            <a class="contacts-icons" href="https://github.com/Yasser-Diab" target="_blank" rel="noopener noreferrer"
-              aria-label="Visit my GitHub profile">
-              <i class="fa-brands fa-square-github" aria-hidden="true"></i>
-            </a>
+        <div class="panel-copy">
+          <p>
+            This page no longer represents only my early learning steps. It now reflects a stronger stage:
+            completed certifications, published practice projects, and a real client landing page shipped for HGAD.
+          </p>
+          <p>
+            Right now, I am building on that foundation by sharpening JavaScript, improving UI polish,
+            and making each new project feel more professional, more reliable, and more intentional than the last one.
+          </p>
+        </div>
 
-            <a class="contacts-icons" href="https://www.linkedin.com/in/diabhassan1812025" target="_blank"
-              rel="noopener noreferrer" aria-label="Visit my LinkedIn profile">
-              <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
-            </a>
-            <a class="contacts-icons" href="tel:+201000052085" aria-label="Call me">
-              <i class="fa-solid fa-square-phone" aria-hidden="true"></i>
-            </a>
-
-
-            <a class="contacts-icons" href="mailto:yasserdiabhassan@gmail.com" aria-label="Send me an email">
-              <i class="fa fa-envelope" aria-hidden="true"></i>
-            </a>
-          </div>
+        <div class="stats-grid" aria-label="Progress summary">
+          <article class="stat-card">
+            <span class="stat-number">4</span>
+            <span class="stat-label">Certificates completed</span>
+          </article>
+          <article class="stat-card">
+            <span class="stat-number">4</span>
+            <span class="stat-label">Published websites</span>
+          </article>
+          <article class="stat-card">
+            <span class="stat-number">1</span>
+            <span class="stat-label">Client project delivered</span>
+          </article>
+          <article class="stat-card">
+            <span class="stat-number">2026</span>
+            <span class="stat-label">Current focus: JavaScript + frontend depth</span>
+          </article>
         </div>
       </section>
 
-      <!-- ================= Skills Section ================= -->
-
-
-      <section id="skills-title" class="skills-section">
-
-        <h2 class="section-title">Skills</h2>
-        <div class="skills-icons">
-          <a href="#skill-html" aria-label="View HTML skills">
-            <i class="html icon fa-brands fa-html5"></i>
-          </a>
-          <a href="#skill-css" aria-label="View CSS skills">
-            <i class="css icon fa-brands fa-css3"></i>
-          </a>
-          <a href="#skill-js" aria-label="View JavaScript skills">
-            <i class="js icon fa-brands fa-square-js"></i>
-          </a>
-          <a href="#skill-frontend" aria-label="View Frontend Development skills">
-            <i class="frontend icon fa-solid fa-laptop-code"></i>
-          </a>
+      <section class="panel now-panel" id="now" data-section>
+        <div class="panel-header">
+          <p class="section-kicker">Current Progress</p>
+          <h2>What I am working on now</h2>
         </div>
+
+        <div class="focus-grid">
+          <article class="focus-card">
+            <h3>JavaScript depth</h3>
+            <p>
+              I am spending more time on DOM work, events, async thinking, cleaner logic,
+              and the kind of interactions that make a page feel alive without becoming messy.
+            </p>
+          </article>
+
+          <article class="focus-card">
+            <h3>UI polish</h3>
+            <p>
+              My goal is not just to make pages responsive. I want them to feel balanced, clear,
+              accessible, and visually confident across mobile and desktop.
+            </p>
+          </article>
+
+          <article class="focus-card">
+            <h3>Real-world readiness</h3>
+            <p>
+              After shipping a client landing page, I am focusing more on structure, clarity,
+              maintainability, and presentation so my work feels closer to professional delivery.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="panel skills-panel" id="skills" data-section>
+        <div class="panel-header">
+          <p class="section-kicker">Skill Set</p>
+          <h2>Core strengths and active growth areas</h2>
+        </div>
+
         <div class="skills-grid">
-
-          <!-- ================= HTML ================= -->
-          <article id="skill-html" class="skill-card current">
+          <article class="skill-card current">
             <header class="skill-header">
-
-              <i class="fa-brands fa-html5"></i>
-              <h3>Semantic HTML5</h3>
-              <span class="skill-badge">Advanced</span>
+              <i class="fa-brands fa-html5" aria-hidden="true"></i>
+              <div>
+                <h3>Semantic HTML</h3>
+                <p class="skill-level">Advanced</p>
+              </div>
             </header>
-
-            <p class="skill-description">
-              Strong foundation in semantic structure, accessibility roles, ARIA attributes,
-              SEO-friendly markup, and well-organized document architecture.
-              Experienced in building structured layouts that scale cleanly across projects.
+            <p>
+              Comfortable with semantic structure, accessible markup, clean hierarchy,
+              and layouts that are easier to scale and maintain.
             </p>
           </article>
 
-
-          <!-- ================= CSS ================= -->
-          <article id="skill-css" class="skill-card current">
+          <article class="skill-card current">
             <header class="skill-header">
-
-              <i class="fa-brands fa-css3"></i>
-              <h3>CSS3 & Layout Systems</h3>
-              <span class="skill-badge">Advanced</span>
+              <i class="fa-brands fa-css3-alt" aria-hidden="true"></i>
+              <div>
+                <h3>Responsive CSS</h3>
+                <p class="skill-level">Advanced</p>
+              </div>
             </header>
-
-            <p class="skill-description">
-              Extensive hands-on experience building responsive layouts using
-              Flexbox, Grid, media queries, animations, transitions, and modern UI patterns.
-              Skilled at crafting user-friendly, visually appealing, and performance-conscious interfaces.
+            <p>
+              Strong hands-on practice with Flexbox, Grid, spacing systems, visual hierarchy,
+              transitions, and responsive layout decisions that hold up across screen sizes.
             </p>
           </article>
 
-
-          <!-- ================= JS ================= -->
-          <article id="skill-js" class="skill-card learning">
+          <article class="skill-card learning">
             <header class="skill-header">
-
-              <i class="fa-brands fa-square-js"></i>
-              <h3>JavaScript</h3>
-              <span class="skill-badge learning-badge">Actively Improving</span>
+              <i class="fa-brands fa-js" aria-hidden="true"></i>
+              <div>
+                <h3>JavaScript</h3>
+                <p class="skill-level">Actively improving</p>
+              </div>
             </header>
-
-            <p class="skill-description">
-              Currently deepening knowledge in DOM manipulation, events, asynchronous JavaScript,
-              API integration, and interactive UI behavior.
-              Focused on writing clean, maintainable logic and understanding core programming concepts.
+            <p>
+              Growing through DOM manipulation, events, UI behavior, asynchronous patterns,
+              and cleaner problem-solving in more realistic frontend scenarios.
             </p>
           </article>
 
-
-          <!-- ================= Frontend Dev ================= -->
-          <article id="skill-frontend" class="skill-card current">
+          <article class="skill-card current">
             <header class="skill-header">
-
-              <i class="fa-solid fa-laptop-code"></i>
-              <h3>Frontend Web Development</h3>
-              <span class="skill-badge">Certified (freeCodeCamp)</span>
+              <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+              <div>
+                <h3>Form and API Integration</h3>
+                <p class="skill-level">Applied in project work</p>
+              </div>
             </header>
-
-            <p class="skill-description">
-              Completed freeCodeCamp Front End Development Certification.
-              Capable of building full landing pages, documentation sites, and structured portfolio systems.
-              Strong understanding of responsive design principles and user-centered development.
+            <p>
+              Used EmailJS and API-connected form handling in a real client landing page,
+              turning a static interface into a working communication flow.
             </p>
           </article>
 
+          <article class="skill-card current">
+            <header class="skill-header">
+              <i class="fa-brands fa-python" aria-hidden="true"></i>
+              <div>
+                <h3>Python Foundations</h3>
+                <p class="skill-level">Certified</p>
+              </div>
+            </header>
+            <p>
+              Built a solid programming base through Python coursework,
+              especially around logic, data structures, and working with web data.
+            </p>
+          </article>
+
+          <article class="skill-card learning">
+            <header class="skill-header">
+              <i class="fa-solid fa-laptop-code" aria-hidden="true"></i>
+              <div>
+                <h3>Frontend Delivery</h3>
+                <p class="skill-level">Growing with each build</p>
+              </div>
+            </header>
+            <p>
+              I am moving from practice-driven pages to more confident portfolio pieces,
+              with better project framing, cleaner code, and stronger user-facing presentation.
+            </p>
+          </article>
         </div>
       </section>
 
-      <!-- =================== Certifications Section =================== -->
-
-      <section class="certifications-section" aria-labelledby="certifications-title">
-
-        <h2 id="certifications-title" class="section-title">Certifications</h2>
+      <section class="panel certifications-panel" id="certifications" data-section>
+        <div class="panel-header">
+          <p class="section-kicker">Certificates</p>
+          <h2>Structured learning that supports the work</h2>
+        </div>
 
         <div class="certifications-grid">
-
-          <!-- freeCodeCamp Responsive Web Design -->
           <article class="certificate-card">
-            <h3>Responsive Web Design – freeCodeCamp</h3>
-            <img src="media/fcc-responsive-v9.png" alt="Responsive Web Design – freeCodeCamp certificate image"
+            <div class="certificate-meta">
+              <span>freeCodeCamp</span>
+              <span>Responsive Design</span>
+            </div>
+            <h3>Responsive Web Design</h3>
+            <p>
+              A strong foundation in semantic HTML, accessibility, layout systems, and
+              the responsive thinking that now shapes my frontend work.
+            </p>
+            <img src="media/fcc-responsive-v9.png" alt="Responsive Web Design certificate version 9"
               class="certificate-img">
-            <a href="https://freecodecamp.org/certification/yasser-diab/responsive-web-design-v9" class="certificate"
-              target="_blank" rel="noopener noreferrer">
-              View Certificate (V9)
-            </a><a href="https://freecodecamp.org/certification/yasser-diab/responsive-web-design" class="certificate"
-              target="_blank" rel="noopener noreferrer">
-              View Certificate (V8)
-            </a>
+            <div class="certificate-links">
+              <a href="https://freecodecamp.org/certification/yasser-diab/responsive-web-design-v9" class="button-link"
+                target="_blank" rel="noopener noreferrer">View V9</a>
+              <a href="https://freecodecamp.org/certification/yasser-diab/responsive-web-design" class="button-link"
+                target="_blank" rel="noopener noreferrer">View V8</a>
+            </div>
           </article>
 
-          <!-- Python Course 1 -->
           <article class="certificate-card">
-            <h3>Programming for Everybody (Getting Started with Python) – University of Michigan</h3>
+            <div class="certificate-meta">
+              <span>University of Michigan</span>
+              <span>Coursera</span>
+            </div>
+            <h3>Programming for Everybody</h3>
+            <p>
+              Strengthened programming fundamentals through Python syntax, logic,
+              variables, control flow, and beginner-friendly problem solving.
+            </p>
             <img src="media/programming-for-everybody.png"
-              alt="Programming for Everybody (Getting Started with Python) – University of Michigan certificate image"
+              alt="Programming for Everybody certificate from the University of Michigan" class="certificate-img">
+            <div class="certificate-links">
+              <a href="https://coursera.org/share/71bbee9b32d68c3d6f91f3601bdfe0e2" class="button-link" target="_blank"
+                rel="noopener noreferrer">View certificate</a>
+            </div>
+          </article>
+
+          <article class="certificate-card">
+            <div class="certificate-meta">
+              <span>University of Michigan</span>
+              <span>Coursera</span>
+            </div>
+            <h3>Python Data Structures</h3>
+            <p>
+              Improved confidence working with lists, dictionaries, strings, loops,
+              and the kind of data handling that supports stronger programming habits.
+            </p>
+            <img src="media/python-data-structures.png" alt="Python Data Structures certificate"
               class="certificate-img">
-            <a href="https://coursera.org/share/71bbee9b32d68c3d6f91f3601bdfe0e2" class="certificate" target="_blank"
-              rel="noopener noreferrer">
-              View Certificate
-            </a>
+            <div class="certificate-links">
+              <a href="https://coursera.org/share/74a90903142fdcca2507e7501730c87f" class="button-link" target="_blank"
+                rel="noopener noreferrer">View certificate</a>
+            </div>
           </article>
 
-          <!-- Python Course 2 -->
           <article class="certificate-card">
-            <h3>Python Data Structures – University of Michigan</h3>
-            <img src="media/python-data-structures.png"
-              alt="Python Data Structures – University of Michigan certificate image" class="certificate-img">
-            <a href="https://coursera.org/share/74a90903142fdcca2507e7501730c87f" class="certificate" target="_blank"
-              rel="noopener noreferrer">
-              View Certificate
-            </a>
+            <div class="certificate-meta">
+              <span>University of Michigan</span>
+              <span>Coursera</span>
+            </div>
+            <h3>Using Python to Access Web Data</h3>
+            <p>
+              Added experience with retrieving, parsing, and working with web data,
+              which reinforced how frontend and programming concepts connect in practice.
+            </p>
+            <img src="media/python-access-web.png" alt="Using Python to Access Web Data certificate"
+              class="certificate-img">
+            <div class="certificate-links">
+              <a href="https://coursera.org/share/3c37aa884c513de363c7f3e607d98ee8" class="button-link" target="_blank"
+                rel="noopener noreferrer">View certificate</a>
+            </div>
           </article>
+        </div>
+      </section>
 
-          <!-- Python Course 3 -->
-          <article class="certificate-card">
-            <h3>Using Python to Access Web Data – University of Michigan</h3>
-            <img src="media/python-access-web.png"
-              alt="Using Python to Access Web Data – University of Michigan certificate image" class="certificate-img">
-            <a href="https://coursera.org/share/3c37aa884c513de363c7f3e607d98ee8" class="certificate" target="_blank"
-              rel="noopener noreferrer">
-              View Certificate
-            </a>
-          </article>
-
+      <section class="panel journey-panel" id="journey" data-section>
+        <div class="panel-header">
+          <p class="section-kicker">Learning Journey</p>
+          <h2>The path so far</h2>
         </div>
 
+        <div class="timeline">
+          <article class="timeline-item">
+            <span class="timeline-date">June 2025</span>
+            <h3>Started with Python fundamentals</h3>
+            <p>
+              Began learning programming through Python and built a base in logic,
+              syntax, and problem solving.
+            </p>
+          </article>
+
+          <article class="timeline-item">
+            <span class="timeline-date">July 2025</span>
+            <h3>Completed Python coursework</h3>
+            <p>
+              Finished University of Michigan Python courses on Coursera
+              and strengthened my programming confidence.
+            </p>
+          </article>
+
+          <article class="timeline-item">
+            <span class="timeline-date">November 2025</span>
+            <h3>Moved into web development</h3>
+            <p>
+              Focused on semantic HTML, cleaner structure, and building pages
+              with more intention instead of just placing elements on screen.
+            </p>
+          </article>
+
+          <article class="timeline-item">
+            <span class="timeline-date">December 2025</span>
+            <h3>Leveled up CSS</h3>
+            <p>
+              Built confidence with responsive layouts, Flexbox, Grid, transitions,
+              and the visual polish that makes interfaces feel more complete.
+            </p>
+          </article>
+
+          <article class="timeline-item timeline-item--highlight">
+            <span class="timeline-date">February 2026</span>
+            <h3>Delivered a real client landing page</h3>
+            <p>
+              Built and deployed the HGAD landing page with a responsive layout,
+              service presentation, and working contact flow through EmailJS.
+            </p>
+          </article>
+
+          <article class="timeline-item">
+            <span class="timeline-date">15 February 2026</span>
+            <h3>Doubled down on advanced web development</h3>
+            <p>
+              Started deeper web development courses to strengthen JavaScript
+              and push beyond the fundamentals into stronger frontend execution.
+            </p>
+          </article>
+
+          <article class="timeline-item timeline-item--current">
+            <span class="timeline-date">April 2026</span>
+            <h3>Refining how I present my work</h3>
+            <p>
+              Updating this profile to better reflect real progress, stronger projects,
+              and a more serious direction toward professional frontend work.
+            </p>
+          </article>
+        </div>
       </section>
 
-      <!-- =================== Learning Journy Section =================== -->
-
-      <section class="learning-journey" aria-labelledby="learning-title">
-        <h2 id="learning-title">Learning Journey</h2>
-
-        <ul class="learning-list">
-
-          <li class="learning-item">
-            <strong class="learning-date">
-              <time datetime="2025-06">June 2025</time>
-            </strong>
-            Started learning Python and explored core programming fundamentals.
-          </li>
-
-          <li class="learning-item">
-            <strong class="learning-date">
-              <time datetime="2025-07">July 2025</time>
-            </strong>
-            Completed Python courses from the University of Michigan (Coursera),
-            strengthening problem-solving and programming foundations.
-          </li>
-
-          <li class="learning-item">
-            <strong class="learning-date">
-              <time datetime="2025-11">November 2025</time>
-            </strong>
-            Began Web Development journey — mastered semantic HTML structure
-            and document architecture.
-          </li>
-
-          <li class="learning-item">
-            <strong class="learning-date">
-              <time datetime="2025-12">December 2025</time>
-            </strong>
-            Advanced into CSS3 — responsive layouts, Flexbox, Grid,
-            animations, and modern UI techniques.
-          </li>
-
-          <li class="learning-item highlight">
-            <strong class="learning-date">
-              <time datetime="2026-02">February 2026</time>
-            </strong>
-            Developed and deployed a real-world product landing page for
-            <strong>Handasia Group for Architectural Designs (HGAD)</strong>,
-            including EmailJS integration and dynamic API-based form handling.
-          </li>
-
-
-          <li class="learning-item highlight">
-            <strong class="learning-date">
-              <time datetime="2026-02-15">15 February 2026</time>
-            </strong>
-            Started advanced Web Development courses on Udemy to deepen
-            JavaScript knowledge and expand into professional-level frontend development.
-          </li>
-
-        </ul>
-      </section>
-
-      <!-- =================== Projects Section =================== -->
-
-
-      <section class="projects-section" aria-labelledby="projects-title">
-        <h2 id="projects-title">Featured Projects</h2>
+      <section class="panel projects-panel" id="projects" data-section>
+        <div class="panel-header">
+          <p class="section-kicker">Featured Work</p>
+          <h2>Projects that show the progression</h2>
+        </div>
 
         <div class="projects-grid">
+          <article class="project-card project-card--featured">
+            <div class="project-label">Client Project</div>
+            <h3>HGAD - Architectural Product Landing Page</h3>
+            <p>
+              A fully responsive landing page for Handasia Group for Architectural Designs,
+              built to present services clearly and support real client inquiries through EmailJS integration.
+            </p>
+            <ul class="project-tags" aria-label="HGAD project tags">
+              <li>Responsive UI</li>
+              <li>Real client work</li>
+              <li>EmailJS</li>
+              <li>API-based form flow</li>
+            </ul>
+            <div class="project-links">
+              <a rel="noopener noreferrer" href="https://yasser-diab.github.io/HGAD-Landing-Page-2026/" target="_blank"
+                class="button-link">Live website</a>
+              <a rel="noopener noreferrer" href="https://github.com/Yasser-Diab/HGAD-Landing-Page-2026" target="_blank"
+                class="button-link button-link--ghost">View code</a>
+            </div>
+          </article>
 
           <article class="project-card">
+            <div class="project-label project-label--muted">Practice Project</div>
             <h3>Responsive Event Flyer</h3>
             <p>
-              Built using HTML and CSS with Flexbox layout and semantic structure.
-              Focused on responsive behavior and clean visual hierarchy.
+              A clean layout exercise focused on semantic structure, responsive behavior,
+              and visual hierarchy built with HTML and CSS.
             </p>
-            <a href="https://yasser-diab.github.io/flyer-page-1" target="_blank" class="project-view">
-              View Project
-            </a>
+            <ul class="project-tags" aria-label="Responsive Event Flyer project tags">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Flexbox</li>
+            </ul>
+            <div class="project-links">
+              <a rel="noopener noreferrer" href="https://yasser-diab.github.io/flyer-page-1" target="_blank"
+                class="button-link">View project</a>
+            </div>
           </article>
 
           <article class="project-card">
+            <div class="project-label project-label--muted">Practice Project</div>
             <h3>Greeting Card Webpage</h3>
             <p>
-              Combined HTML, CSS, and introductory JavaScript
-              to practice interactivity and responsive design.
+              A smaller interactive build where I combined layout, styling,
+              and introductory JavaScript to create a more playful experience.
             </p>
-            <a href="https://yasser-diab.github.io/first-greeting-card" target="_blank" class="project-view">
-              View Project
-            </a>
+            <ul class="project-tags" aria-label="Greeting Card project tags">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Intro JavaScript</li>
+            </ul>
+            <div class="project-links">
+              <a rel="noopener noreferrer" href="https://yasser-diab.github.io/first-greeting-card" target="_blank"
+                class="button-link">View project</a>
+            </div>
           </article>
 
           <article class="project-card">
-            <h3>Job Application Form (FCC)</h3>
+            <div class="project-label project-label--muted">Curriculum Build</div>
+            <h3>Job Application Form</h3>
             <p>
-              Developed as part of freeCodeCamp curriculum.
-              Focused on semantic forms, validation,
-              accessibility, and CSS pseudo-classes.
+              A form-focused project that helped me practice semantic inputs,
+              layout structure, validation thinking, and usability details.
             </p>
-            <a href="https://yasser-diab.github.io/FCC-Job-Application-Form" target="_blank" class="project-view">
-              View Project
-            </a>
-          </article>
-          <article class="project-card featured-project">
-
-            <h3>HGAD – Architectural Product Landing Page</h3>
-
-            <p class="project-description">
-              A fully responsive, mobile-first product landing page built for
-              Handasia Group for Architectural Designs (HGAD).
-              This real client project showcases aluminium systems, façade engineering services,
-              and includes a fully functional contact form integrated with EmailJS.
-            </p>
+            <ul class="project-tags" aria-label="Job Application Form project tags">
+              <li>Forms</li>
+              <li>Accessibility</li>
+              <li>Pseudo-classes</li>
+            </ul>
             <div class="project-links">
-              <a href="https://yasser-diab.github.io/HGAD-Landing-Page-2026/" target="_blank" class="project-view">
-                Live Website
-              </a>
-              <a href="https://github.com/Yasser-Diab/HGAD-Landing-Page-2026" target="_blank" class="project-view">
-                View Code
-              </a>
+              <a rel="noopener noreferrer" href="https://yasser-diab.github.io/FCC-Job-Application-Form" target="_blank"
+                class="button-link">View project</a>
             </div>
-
           </article>
-
-
         </div>
       </section>
 
-      <!-- =================== Footer =================== -->
+      <section class="panel contact-panel" id="contact" data-section>
+        <div class="panel-header">
+          <p class="section-kicker">Contact</p>
+          <h2>Let's connect</h2>
+        </div>
 
-      <footer class="profile-footer">
-        <p>&copy; 2026 Yasser Diab</p>
-        <a href="https://github.com/Yasser-Diab" aria-label="Visit my GitHub profile" target="_blank">GitHub</a>
-        <a href="#contact-heading">Contact</a>
-        <a href="#skills-title">Skills</a>
-        <a href="#learning-title">Journey</a>
-        <a href="#projects-title">Projects</a>
+        <p class="contact-copy">
+          If you want to collaborate, ask for help with a web page, or follow my progress as I keep improving,
+          these are the best places to reach me.
+        </p>
+
+        <div class="contact-grid">
+          <a class="contact-card" href="mailto:yasserdiabhassan@gmail.com">
+            <span class="contact-label">Email</span>
+            <strong>yasserdiabhassan@gmail.com</strong>
+            <span>Best for collaboration and project inquiries</span>
+          </a>
+
+          <a class="contact-card" href="https://github.com/Yasser-Diab" target="_blank" rel="noopener noreferrer">
+            <span class="contact-label">GitHub</span>
+            <strong>@Yasser-Diab</strong>
+            <span>Code, experiments, and published projects</span>
+          </a>
+
+          <a class="contact-card" href="https://www.linkedin.com/in/diabhassan1812025" target="_blank"
+            rel="noopener noreferrer">
+            <span class="contact-label">LinkedIn</span>
+            <strong>LinkedIn profile</strong>
+            <span>Learning journey, networking, and updates</span>
+          </a>
+
+          <a class="contact-card" href="tel:+201000052085">
+            <span class="contact-label">Phone</span>
+            <strong>Direct call</strong>
+            <span>Direct contact for quick communication</span>
+          </a>
+        </div>
+      </section>
+
+      <footer class="site-footer">
+        <p>&copy; <span id="year"></span> Yasser Diab.</p>
+        <a href="#top">Back to top</a>
       </footer>
     </div>
   </main>
