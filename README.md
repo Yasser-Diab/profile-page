@@ -1,72 +1,51 @@
 Yasser Diab — Personal Profile Page
 
-A simple and elegant personal profile webpage built using HTML & CSS.
-This project represents my early steps in frontend development, and I aim to improve it as I continue learning.
+A refreshed personal profile page built with HTML, CSS, and JavaScript.
+This version presents a stronger snapshot of my current frontend progress, including certifications,
+real project work, and the skills I am actively improving.
 
-## Features
+## Highlights
 
-- Clean and responsive design
+- Modern responsive layout with a stronger portfolio feel
+- Updated copy focused on current progress instead of only early learning
+- Dedicated sections for overview, current focus, skills, certifications, journey, and projects
+- Persistent light and dark theme toggle
+- Scroll-aware navigation and section reveal effects
+- Mobile-friendly layout with improved spacing and readability
 
-- Profile image and short bio
-
-- Contact buttons with icons
-
-- Skills section with interactive hover effects
-
-- A vertical timeline showing my learning progress
-
-- Smooth scrolling navigation
-
-- Mobile-friendly layout
-
-## Technologies Used
+## Tech Used
 
 - HTML5
-
 - CSS3
-
-- Flexbox
-
-- Media Queries
-
-- Smooth Scroll
-
-- Custom hover backgrounds for skills section
+- JavaScript
+- Font Awesome
+- Google Fonts
 
 ## Project Structure
-/project-folder
-│
-├── index.html
-├── Profile-Page-Styles.css
-└── /media
-     ├── Profile-img-1.jpg
-     ├── DP.jpg
-## How to Run the Project
 
-Visit:
+```text
+/profile-page
+|-- index.html
+|-- Profile-Page-Styles.css
+|-- script.js
+`-- /media
+```
 
-https://yasser-diab.github.io/profile-page/
+## Run Locally
 
-## Future Improvements
+1. Clone or download the project.
+2. Open `index.html` in your browser.
 
-- Add a dedicated Projects section
+## Main Goals of This Version
 
-- Add animations using JavaScript
+- Present my learning journey more professionally
+- Highlight certifications and project work more clearly
+- Show where I am now with JavaScript and frontend growth
+- Improve the visual design without adding unnecessary complexity
 
-- Add a dark mode
+## Contact
 
-- Improve mobile UI
-
-- Add download CV button
-
-## contact
-
-If you need help with simple coding or want to collaborate, feel free to reach out:
-
-Email: yasserdiabhassan@gmail.com
-
-LinkedIn: https://www.linkedin.com/in/diabhassan1812025
-
-
-GitHub: https://github.com/Yasser-Diab
+- Email: `yasserdiabhassan@gmail.com`
+- LinkedIn: [Yasser Diab](https://www.linkedin.com/in/diabhassan1812025)
+- GitHub: [Yasser-Diab](https://github.com/Yasser-Diab)
 
