@@ -119,6 +119,7 @@ select {
     background: rgba(15, 11, 8, 0.72);
     color: var(--text);
     cursor: pointer;
+    -webkit-backdrop-filter: blur(18px);
     backdrop-filter: blur(18px);
     box-shadow: var(--shadow);
     transition: transform var(--transition), border-color var(--transition), background var(--transition);
@@ -162,6 +163,7 @@ select {
     background: var(--panel);
     border: 1px solid var(--line);
     box-shadow: var(--shadow);
+    -webkit-backdrop-filter: blur(18px);
     backdrop-filter: blur(18px);
 }
 
@@ -659,6 +661,7 @@ button:focus-visible {
 }
 
 @media (min-width: 640px) {
+
     .stats-grid,
     .contact-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
